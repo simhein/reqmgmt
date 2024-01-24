@@ -38,22 +38,21 @@ jobs:
         run: |
             source ./venv/bin/activate
             strictdoc export .
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
+      
+      - name: Setup pages
         uses: actions/configure-pages@v4
-      - name: Upload artifact
+
+      - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: 'output/html'
+          path: output/html
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
