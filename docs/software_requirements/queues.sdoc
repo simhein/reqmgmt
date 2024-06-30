@@ -1,0 +1,24 @@
+[DOCUMENT]
+TITLE: Tracing
+REQ_PREFIX: ZEP-SRS-20-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: software_requirements.sgra
+
+[REQUIREMENT]
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Queues
+TITLE: Queue definition at compile time
+STATEMENT: >>>
+The Zephyr RTOS shall provide a mechanism to define and initialize a queue at compile time.
+<<<
+
+[REQUIREMENT]
+STATUS: Draft
+TYPE: Functional
+COMPONENT: Queues
+TITLE: Queue definition at run time.
+STATEMENT: >>>
+The Zephyr RTOS shall provide a mechanism to define and initialize a queue at run time.
+<<<
