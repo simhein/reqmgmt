@@ -293,3 +293,18 @@ Zepyhr shall provide a framework mechanism for tracing low level system operatio
 USER_STORY: >>>
 As a Zephyr RTOS user, I want to be able to trace different OS operations.
 <<<
+
+[SECTION]
+TITLE: FIFOs
+
+[REQUIREMENT]
+UID: ZEP-SYRS-21
+STATUS: Draft
+TYPE: Functional
+COMPONENT: FIFO
+TITLE: FIFOs
+STATEMENT: >>>
+The zephyr RTOS shall implement a queue which manage data items in a first-in, first-out order.
+<<<
+
+[/SECTION]
