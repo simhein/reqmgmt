@@ -1,0 +1,27 @@
+[DOCUMENT]
+TITLE: Tracing
+REQ_PREFIX: ZEP-SRS-
+
+[GRAMMAR]
+IMPORT_FROM_FILE: software_requirements.sgra
+
+[TEXT]
+STATEMENT: >>>
+SPDX-License-Identifier: Apache-2.0
+<<<
+
+[REQUIREMENT]
+STATUS: Draft
+TYPE: Functional
+COMPONENT: FIFO
+TITLE: Static FIFO initialization
+STATEMENT: >>>
+<<<
+
+[REQUIREMENT]
+STATUS: Draft
+TYPE: Functional
+COMPONENT: FIFO
+TITLE: Dynamic FIFO initialization
+STATEMENT: >>>
+<<<
